@@ -50,8 +50,8 @@ class _HomeScreenState extends State<HomeScreen> {
         centerTitle: true,
         elevation: 0.0,
         title: Text(
-          "Tip Calculator",
-          style: Theme.of(context).primaryTextTheme.display1,
+          "Hesabı Bölüselim",
+          //style: Theme.of(context).primaryTextTheme.display1,
         ),
       ),
       body: Container(
@@ -80,7 +80,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   },
                   color: Colors.orange,
                   child: Text(
-                    "Bill Total",
+                    "Hesap",
                     style: Theme.of(context).primaryTextTheme.headline,
                   ),
                   shape: RoundedRectangleBorder(
@@ -102,8 +102,8 @@ class _HomeScreenState extends State<HomeScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Text(
-                  "tip @ $tipPercent%",
-                  style: Theme.of(context).textTheme.headline,                  
+                  "Bahsis @ $tipPercent%",
+                  style: Theme.of(context).textTheme.headline,
                 ),
                 Text(
                   "${formatter.format(tip)}",
@@ -117,7 +117,7 @@ class _HomeScreenState extends State<HomeScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Text(
-                  "Total with tip",
+                  "Toplam",
                   style: Theme.of(context).textTheme.headline,                  
                 ),
                 Text(
@@ -138,7 +138,7 @@ class _HomeScreenState extends State<HomeScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Text(
-                  "Split between",
+                  "Kisi Sayısı",
                   style: Theme.of(context).textTheme.headline,                  
                 ),
                 Text(

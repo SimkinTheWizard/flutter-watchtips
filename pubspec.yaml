@@ -67,3 +67,8 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.io/custom-fonts/#from-packages
+
+  fonts:
+    - family: halter
+      fonts:
+        - asset: font/halter.ttf

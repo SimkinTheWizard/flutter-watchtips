@@ -36,21 +36,24 @@ class TipCalculator extends StatelessWidget {
       textTheme: base.textTheme.apply(
         bodyColor: appTextColor,
         displayColor: appTextColor,
+        fontFamily: 'halter',
       ),
 
       primaryTextTheme: base.primaryTextTheme.apply(
         bodyColor: appPrimaryTextColor,
         displayColor: appPrimaryTextColor,
+        fontFamily: 'halter',
       ),
 
       accentTextTheme: base.primaryTextTheme.apply(
         bodyColor: accentTextColor,
         displayColor: accentTextColor,
+        fontFamily: 'halter',
       ),
 
       buttonTheme: base.buttonTheme.copyWith(
         buttonColor: appButtonColor,
-        textTheme: ButtonTextTheme.primary
+        textTheme: ButtonTextTheme.primary,
       ),
 
       iconTheme: base.iconTheme.copyWith(
