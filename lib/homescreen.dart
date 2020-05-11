@@ -3,6 +3,7 @@ import 'dart:io' show Platform;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:intl/intl.dart';
+import 'package:watchtips/colors.dart';
 import 'numberpad.dart';
 import 'widgets/scaleroute.dart';
 
@@ -50,21 +51,26 @@ class _HomeScreenState extends State<HomeScreen> {
         centerTitle: true,
         elevation: 0.0,
         title: Text(
-          "Hesabı Bölüselim",
+          //"Hesabı Bölüselim",
+          "",
           //style: Theme.of(context).primaryTextTheme.display1,
         ),
       ),
       body: Container(
-        padding: EdgeInsets.all(20.0),
+        //padding: EdgeInsets.all(20.0),
         child: Column(
           children: <Widget>[
-
+            Container(
+                color: containerColor,
+                padding: EdgeInsets.all(20.0),
+                child: Column(
+                    children: <Widget>[
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
 
-                RaisedButton(
-                  elevation: 0.0,
+                OutlineButton(
+                  //elevation: 0.0,
                   onPressed: () async {
                     var value = await Navigator.push(
                       context,
@@ -78,14 +84,16 @@ class _HomeScreenState extends State<HomeScreen> {
                       calculateBill(value);
                     }
                   },
-                  color: Colors.orange,
+                  color: containerColor,
+                  borderSide: new BorderSide(color: darkButtonColor),
+                  highlightColor:  darkButtonColor,
+                  shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(30.0)),
+
                   child: Text(
                     "Hesap",
                     style: Theme.of(context).primaryTextTheme.headline,
                   ),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: new BorderRadius.circular(30.0),
-                  ),
+
                 ),
  
                 Text(
@@ -153,7 +161,7 @@ class _HomeScreenState extends State<HomeScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Text(
-                  "Cost each",
+                  "Kisi basina dusen",
                   style: Theme.of(context).textTheme.headline,                  
                 ),
                 Text(
@@ -163,15 +171,20 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ],
             ),
+                      Container(
+                          margin: EdgeInsets.all(15.0),
+                          height: 1.0,
+                          color: Theme.of(context).textTheme.headline.color
+                      ),
+
+                    ]
+            ),
+            ),
+
 
 
             Container(
-              margin: EdgeInsets.all(15.0),
-              height: 1.0,
-              color: Theme.of(context).textTheme.headline.color
-            ),
-
-            Expanded(
+              padding: EdgeInsets.all(20.0),
               child: Center(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,

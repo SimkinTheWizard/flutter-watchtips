@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'homescreen.dart';
 import 'colors.dart';
+//import 'package:google_fonts/google_fonts.dart';
 
 /// Kick the Tyres and Light the Fires
 void main() {
@@ -36,19 +37,19 @@ class TipCalculator extends StatelessWidget {
       textTheme: base.textTheme.apply(
         bodyColor: appTextColor,
         displayColor: appTextColor,
-        fontFamily: 'halter',
+        fontFamily: 'San Fransisco'
       ),
 
       primaryTextTheme: base.primaryTextTheme.apply(
         bodyColor: appPrimaryTextColor,
         displayColor: appPrimaryTextColor,
-        fontFamily: 'halter',
+          fontFamily: 'San Fransisco'
       ),
 
       accentTextTheme: base.primaryTextTheme.apply(
         bodyColor: accentTextColor,
         displayColor: accentTextColor,
-        fontFamily: 'halter',
+          fontFamily: 'San Fransisco'
       ),
 
       buttonTheme: base.buttonTheme.copyWith(

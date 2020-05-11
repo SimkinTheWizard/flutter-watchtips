@@ -50,7 +50,7 @@ class _NumberPadState extends State<NumberPad> {
                 Padding(
                   padding: EdgeInsets.all(10.0),
                   child: Text(
-                    "Bill Total",
+                    "Toplam Hesap",
                     textAlign: TextAlign.center,
                     style: Theme.of(context).primaryTextTheme.display1,
                   ),
@@ -105,7 +105,7 @@ class _NumberPadState extends State<NumberPad> {
                       }
                     },
                     child: Text(
-                      "ENTER",
+                      "TAMAM",
                       style: Theme.of(context).primaryTextTheme.headline,
                     ),
                   ),
